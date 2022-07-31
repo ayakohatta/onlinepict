@@ -1,0 +1,10 @@
+<h1>Photo Stand</h1>
+<h3>新規展示</h3>
+<%= form_for @photo do |f| %>
+  <div class="field">
+    <%= f.label :body %>
+    <%= f.text_field :body, :size => 140 %>
+  </div>
+  <%= f.submit "展示する" %>
+<% end %>
+<%= link_to "Tweet一覧に戻る", photos_path %>

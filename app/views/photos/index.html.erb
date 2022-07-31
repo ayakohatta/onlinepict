@@ -1,0 +1,10 @@
+<h1>Photo Stand（トップページ）</h1>
+
+<%= link_to 'ログインはこちら' ,users_new_path %>
+<%= link_to 'マイページ' ,users_show_path %>
+
+<%= link_to photos_show_path do %>
+    展示を見る
+  <% end %>
+
+<%= link_to "新規展示ページへ", photos_new_path %>
